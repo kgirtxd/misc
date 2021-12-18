@@ -1,3 +1,4 @@
-var tab = window.open('about:blank', '_blank');
-tab.document.write("Hello Kon"); // where 'html' is a variable containing your HTML
-tab.document.close(); // to finish loading the page
+var data = "<p>This is 'myWindow'</p>";
+myWindow = window.open("data:text/html," + encodeURIComponent(data),
+                       "_blank", "width=200,height=100");
+myWindow.focus();
